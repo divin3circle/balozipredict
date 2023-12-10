@@ -1,7 +1,16 @@
+import { Stats } from "fs";
+import Balozi from "./homecomponents/Balozi";
+import Hero from "./homecomponents/Hero";
+import Testimonials from "./homecomponents/Testimonials";
+import Statistics from "./homecomponents/Statistics";
+
 export default function Home() {
   return (
-    <>
-      <h1 className='text-xl background-trasparent text-red-500 font-bold'>Sylus v23 Abel</h1>
-    </>
-  )
+    <section className=" max-w-[1280px] mx-auto">
+      <Hero />
+      <Balozi />
+      <Statistics />
+      <Testimonials />
+    </section>
+  );
 }
