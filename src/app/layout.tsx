@@ -19,7 +19,6 @@ export default function RootLayout({
       <body>
         <nav>
           <MainNavBar />
-          <MobileNavBar />
         </nav>
         <main className="">{children}</main>
         <footer>

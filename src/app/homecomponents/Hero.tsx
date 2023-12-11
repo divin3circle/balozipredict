@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="md:flex justify-between">
       <div>
         {/* hero */}
-        <div className="mt-24">
+        <div className="bp:mt-24 mt-10">
           <h1 className="md:text-3xl text-2xl font-bold text-shark p-4">
             The KickOff to Victory
           </h1>
