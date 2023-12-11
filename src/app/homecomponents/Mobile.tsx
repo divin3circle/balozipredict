@@ -27,14 +27,14 @@ export default function Mobile({ toggleNav, setToggleNav }: MobileProps) {
           </div>
         </Link>
         <div
-          className="cursor-pointer"
+          className="cursor-pointer text-shark"
           onClick={() => setToggleNav(!toggleNav)}
         >
           <IoClose className="hover:text-blue-500" size={38} />
         </div>
       </div>
       <div className="flex justify-center items-center h-screen">
-        <ul className="flex-col justify-between items-center font-semibold bp:gap-3 gap-4 text-4xl  ">
+        <ul className="flex-col justify-between items-center font-semibold bp:gap-3 gap-4 text-4xl text-shark ">
           <Link
             href="/"
             className="p-3 rounded-[0.15rem] ease-in duration-200 hover:text-blue-500"

@@ -3,6 +3,7 @@ import "./globals.css";
 import MainNavBar from "./MainNavBar";
 import Footer from "./Footer";
 import MobileNavBar from "./MobileNavBar";
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata: Metadata = {
   title: "Balozi Predictions",

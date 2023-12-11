@@ -33,7 +33,10 @@ export default function MobileNavBar() {
           <Image src={balozi} alt="balozisvg" height={40} width={40} />
         </div>
       </Link>
-      <div className="cursor-pointer" onClick={() => setToggleNav(!toggleNav)}>
+      <div
+        className="cursor-pointer text-shark"
+        onClick={() => setToggleNav(!toggleNav)}
+      >
         <RxHamburgerMenu size={38} />
       </div>
       <Mobile toggleNav={toggleNav} setToggleNav={setToggleNav} />
