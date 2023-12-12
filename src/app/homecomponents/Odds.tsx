@@ -4,7 +4,7 @@ import about from "../../../public/coach.jpeg";
 
 export default function Odds() {
   return (
-    <section className="overflow-hidden sm:grid sm:grid-cols-2">
+    <section className="overflow-hidden max-w-[1440px] m-auto sm:grid sm:grid-cols-2">
       <div className="md:flex m-auto justify-center items-center hidden">
         <Image src={about} alt="balozipredict" height={400} width={400} />
       </div>

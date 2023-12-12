@@ -1,6 +1,7 @@
 import React from "react";
 import Odds from "../homecomponents/Odds";
 import Corousel from "./Corousel";
+import Win from "../homecomponents/Win";
 
 export default function page() {
   return (
@@ -9,6 +10,7 @@ export default function page() {
         <Corousel />
       </div>
       <Odds />
+      <Win />
     </div>
   );
 }

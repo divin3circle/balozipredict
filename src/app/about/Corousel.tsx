@@ -50,7 +50,7 @@ export default function Corousel() {
     { id: 8, src: balozi8 },
   ];
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative hidden bp:block">
       <div
         className={`flex ease-in duration-500 translate-x-[-${current * 100}%]`}
       >
@@ -58,7 +58,7 @@ export default function Corousel() {
           return (
             <div key={slide.id} className=" my-8">
               <Image
-                className="min-h-[300px] p-2  min-w-[300px] object-fit rounded-xl"
+                className="min-h-[300px] min-w-[300px] object-fit rounded-xl"
                 src={slide.src}
                 alt="balozipredict"
                 height={700}
@@ -68,7 +68,7 @@ export default function Corousel() {
           );
         })}
       </div>
-      <div className="flex absolute top-0 h-full w-full justify-between items-center text-white px-10 text-xl">
+      <div className="flex absolute top-0 h-full w-full justify-between items-center text-white md:px-10 px-4 text-xl">
         <button onClick={prevSlide}>
           <FaArrowAltCircleLeft size={44} />
         </button>

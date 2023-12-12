@@ -10,7 +10,7 @@ export default function MainNavBar() {
 
   return (
     <>
-      <div className="hidden bp:flex justify-between font-bold text-xl p-2 m-4">
+      <div className="hidden bp:flex justify-between font-bold text-xl p-2 md:p-1 m-4">
         {/* logo */}
         <Link href="/">
           <div
@@ -22,7 +22,7 @@ export default function MainNavBar() {
           </div>
         </Link>
         {/* navbar, refactor mobile one */}
-        <ul className="flex justify-between items-center font-semibold bp:gap-3 gap-4 text-shark text-xl ">
+        <ul className="flex justify-between items-center font-semibold md:gap-3 gap-4 text-shark ">
           <Link
             href="/"
             className="border-b-blue-500 hover:border-b-[3px] p-3 rounded-[0.15rem] ease-in duration-200 hover:text-blue-500"
