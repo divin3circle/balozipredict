@@ -67,14 +67,14 @@ export default function Contact() {
                     className="peer sr-only"
                     id="option1"
                     type="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                     name="option"
                   />
 
                   <label
                     htmlFor="option1"
                     className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 cursor-pointer hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:text-white"
-                    tabIndex="0"
+                    tabIndex={0}
                   >
                     <span className="text-sm">About Balozi Premium</span>
                   </label>
@@ -85,14 +85,14 @@ export default function Contact() {
                     className="peer sr-only"
                     id="option2"
                     type="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                     name="option"
                   />
 
                   <label
                     htmlFor="option2"
                     className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 cursor-pointer hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:text-white"
-                    tabIndex="0"
+                    tabIndex={0}
                   >
                     <span className="text-sm"> Payment methods</span>
                   </label>
@@ -103,14 +103,14 @@ export default function Contact() {
                     className="peer sr-only"
                     id="option3"
                     type="radio"
-                    tabIndex="-1"
+                    tabIndex={-1}
                     name="option"
                   />
 
                   <label
                     htmlFor="option3"
                     className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 cursor-pointer hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-500 peer-checked:text-white"
-                    tabIndex="0"
+                    tabIndex={0}
                   >
                     <span className="text-sm"> Other</span>
                   </label>
@@ -125,7 +125,7 @@ export default function Contact() {
                 <textarea
                   className="w-full rounded-lg border-gray-200 p-3"
                   placeholder="Message"
-                  rows="8"
+                  rows={8}
                   id="message"
                 ></textarea>
               </div>
