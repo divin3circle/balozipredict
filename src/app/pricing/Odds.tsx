@@ -1,6 +1,65 @@
 import React from "react";
+import Table from "./Table";
 
 export default function Odds() {
+  const games = [
+    {
+      id: 1,
+      league: "ENG",
+      match: "Liverpool vs Manchester United",
+      time: "19:30",
+      bet: "X2",
+    },
+    {
+      id: 2,
+      league: "ENG",
+      match: "Brentford vs Aston Villa",
+      time: "18:00",
+      bet: "2",
+    },
+    {
+      id: 3,
+      league: "ESP",
+      match: "Real Madrid vs Villareal",
+      time: "23:00",
+      bet: "X2",
+    },
+    {
+      id: 4,
+      league: "FRA",
+      match: "Lille vs PSG",
+      time: "22:45",
+      bet: "BTTS",
+    },
+    {
+      id: 5,
+      league: "ENG",
+      match: "West Ham vs Wolves",
+      time: "17:00",
+      bet: "1",
+    },
+    {
+      id: 6,
+      league: "ENG",
+      match: "West Brom vs Stoke City",
+      time: "15:00",
+      bet: "X",
+    },
+    {
+      id: 7,
+      league: "FRA",
+      match: "Toulouse vs Rennes",
+      time: "17:00",
+      bet: "U3.5",
+    },
+    {
+      id: 8,
+      league: "ITA",
+      match: "Lazio vs Inter Millan",
+      time: "22:45",
+      bet: "2 & U3.5",
+    },
+  ];
   return (
     <div>
       <div className=" flex justify-center items-center my-6">
@@ -9,79 +68,18 @@ export default function Odds() {
         </p>
       </div>
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-          <tbody className="divide-y divide-gray-200">
-            <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                John Doe
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                24/05/1995
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                Web Developer
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                $120,000
-              </td>
-              <td className="whitespace-nowrap px-4 py-2">
-                <a
-                  href="#"
-                  className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
-                >
-                  View
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                Jane Doe
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                04/11/1980
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                Web Designer
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                $100,000
-              </td>
-              <td className="whitespace-nowrap px-4 py-2">
-                <a
-                  href="#"
-                  className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
-                >
-                  View
-                </a>
-              </td>
-            </tr>
-
-            <tr>
-              <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                Gary Barlow
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                24/05/1995
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                Singer
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                $20,000
-              </td>
-              <td className="whitespace-nowrap px-4 py-2">
-                <a
-                  href="#"
-                  className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
-                >
-                  View
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        d
+        {games.map((game) => {
+          return (
+            <div key={game.id}>
+              <Table
+                league={game.league}
+                match={game.match}
+                time={game.time}
+                bet={game.bet}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
