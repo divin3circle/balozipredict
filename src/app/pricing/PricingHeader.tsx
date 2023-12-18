@@ -39,23 +39,31 @@ export default function PricingHeader() {
         <div className="flex justify-between gap-2">
           {/* socials */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <FaSquareXTwitter size={44} />
+            <Link href="https://x.com/balozipredict?t=J1rcCZNWsx2p2PiQvX0ZTQ&s=09">
+              <FaSquareXTwitter size={44} />
+            </Link>
           </div>{" "}
           {/* twtter */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <FaTelegram size={44} />
+            <Link href="https://t.me/BALOZIPREDICTION">
+              <FaTelegram size={44} />
+            </Link>
           </div>{" "}
           {/* telegram */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <FaFacebookSquare size={44} />
+            <Link href="https://www.facebook.com/profile.php?id=100070421967199">
+              <FaFacebookSquare size={44} />
+            </Link>
           </div>{" "}
           {/* facebook */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <FaInstagramSquare size={44} />
+            <Link href="https://www.facebook.com/profile.php?id=100070421967199">
+              <FaInstagramSquare size={44} />
+            </Link>
           </div>{" "}
           {/* instagram */}
         </div>
-        <Link href="/blogs" className="flex justify-center items-center my-8">
+        <Link href="/payment" className="flex justify-center items-center my-8">
           <button className="hover:bg-blue-500 text-gray-100 py-2 px-8 text-xl md:text-3xl bg-transparent shadow-lg shadow-blue-500/30 border-blue-500 hover:scale-105 hover:text-white border-[1px] rounded-lg ease-in duration-150">
             See Pricing
           </button>

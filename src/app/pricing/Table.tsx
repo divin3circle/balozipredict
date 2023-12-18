@@ -27,7 +27,7 @@ export default function Table({ league, time, match, bet }: TableProps) {
             </td>
             <td
               className="whitespace-nowrap px-4 py-2 text-gray-700 truncate"
-              style={{ width: "350px" }}
+              style={{ width: "400px" }}
             >
               {match}
             </td>
@@ -37,9 +37,9 @@ export default function Table({ league, time, match, bet }: TableProps) {
             >
               {bet}
             </td>
-            <td className="whitespace-nowrap px-4 py-2">
+            <td className="whitespace-nowrap px-4 py-2 flex justify-end">
               <a
-                href="#"
+                href="https://bit.ly/3XxVHgv"
                 className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
               >
                 View

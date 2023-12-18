@@ -3,6 +3,7 @@ import "./globals.css";
 import MainNavBar from "./MainNavBar";
 import Footer from "./Footer";
 import MobileNavBar from "./MobileNavBar";
+import Modal from "./Modal";
 
 export const metadata: Metadata = {
   title: "Balozi Predictions",
@@ -22,6 +23,9 @@ export default function RootLayout({
         </nav>
         <main className="">{children}</main>
         <footer>
+          <div className="max-w-6xl mx-auto">
+            <Modal />
+          </div>
           <Footer />
         </footer>
       </body>

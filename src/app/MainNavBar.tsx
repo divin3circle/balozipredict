@@ -50,7 +50,10 @@ export default function MainNavBar() {
         </ul>
 
         <div>
-          <Link href="#" className="p-3 flex items-center justify-center">
+          <Link
+            href="/pricing"
+            className="p-3 flex items-center justify-center"
+          >
             <button className="py-2 px-4 bg-transparent border-[1px] hover:shadow-xl shadow-blue-500 border-blue-500 hover:bg-blue-500 ease-in duration-150 hover:scale-105 text-black hover:text-white rounded-lg">
               get started
             </button>
