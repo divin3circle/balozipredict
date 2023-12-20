@@ -60,7 +60,6 @@ export default function Mobile({ toggleNav, setToggleNav }: MobileProps) {
             <li>blogs</li>
           </Link>
         </ul>
-        d
       </div>
     </div>
   );

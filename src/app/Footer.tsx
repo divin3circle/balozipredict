@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -14,12 +15,12 @@ export default function Footer() {
             odds.
           </p>
 
-          <a
-            href="#"
+          <Link
+            href="/balozi"
             className="mt-8 inline-block rounded-full border shadow-md hover:scale-105 ease-in duration-150 border-blue-500 px-12 py-3 text-sm font-medium text-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none focus:ring active:bg-blue-400"
           >
             Checkout Today&apos;s Odds
-          </a>
+          </Link>
         </div>
 
         <div className="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
