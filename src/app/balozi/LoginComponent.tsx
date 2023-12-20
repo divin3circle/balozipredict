@@ -15,7 +15,7 @@ export default function LoginComponent({
     <div>
       <div className="h-screen mx-auto flex items-center justify-center">
         <div className="p-8 rounded-lg shadow-blue-500 shadow-md flex-col items-center">
-          <h1 className="text-center font-bold text-xl md:text-3xl my-4">
+          <h1 className="text-center font-bold text-xl md:text-3xl my-4 text-shark">
             Please Verify Your Idenity
           </h1>
           <input
