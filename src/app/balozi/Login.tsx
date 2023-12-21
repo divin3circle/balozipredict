@@ -2,31 +2,26 @@
 import React, { useState } from "react";
 import LoginComponent from "./LoginComponent";
 import Home from "./Home";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { auth, googleProvider } from "../config/firebase";
 
 export default function Login() {
-  const [admin, setAdmin] = useState<number>(0);
-  const [correctPasscode, setCorrectPasscode] = useState<boolean>(false);
-  const adminLogin = 12345;
-  const handleClick = () => {
-    if (admin !== adminLogin) {
-      console.log("Wrong passcode");
-      console.log(correctPasscode);
-    } else {
-      setCorrectPasscode(true);
-      console.log("Login successful");
-      console.log(correctPasscode);
+  const [isAdmin, setIsAdmin] = useState(false);
+  console.log(auth?.currentUser?.email);
+  const signInWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (err) {
+      console.error(err);
     }
   };
+
   return (
     <div>
-      {!correctPasscode ? (
-        <LoginComponent
-          setAdmin={setAdmin}
-          handleClick={handleClick}
-          correctPasscode={correctPasscode}
-        />
-      ) : (
+      {auth?.currentUser?.email === "balozipredict@gmail.com" ? (
         <Home />
+      ) : (
+        <LoginComponent isAdmin={isAdmin} setIsAdmin={setIsAdmin} />
       )}
     </div>
   );

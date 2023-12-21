@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import balozi from "../../public/balozi7.jpeg";
+import balozi from "../../public/balozi4.jpeg";
 
 function Modal() {
   return (
@@ -9,7 +9,7 @@ function Modal() {
         <Image
           alt="1XBET"
           src={balozi}
-          className="h-32 w-full object-cover md:h-full"
+          className="h-32 w-full object-contain md:object-cover md:h-full"
         />
 
         <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8">

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { use, useEffect } from "react";
 import Table from "./Table";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
 
 export default function Odds() {
   const games = [
@@ -60,6 +62,19 @@ export default function Odds() {
       bet: "2 & U3.5",
     },
   ];
+  const [bets, setBets] = React.useState([]);
+  const betCollectionRef = collection(db, "bets");
+
+  useEffect(() => {
+    const getBets = async () => {
+      try {
+        const data = await getDocs(betCollectionRef);
+        console.log(data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+  }, [betCollectionRef]);
   return (
     <div>
       <div className=" flex justify-center items-center my-6">
