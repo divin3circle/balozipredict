@@ -4,87 +4,87 @@ import { addDoc, writeBatch } from "firebase/firestore";
 import { getDocs, collection } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Odds from "../pricing/Odds";
 import RemoveBets from "./RemoveBets";
+import RemovePastBets from "./RemovePastBets";
 
-export default function AddBet() {
-  const [newBetLeague, setNewBetLeague] = useState("");
-  const [newBetTime, setNewBetTime] = useState("");
-  const [newBetGame, setNewBetGame] = useState("");
+export default function AddPastBet() {
+  const [newBetMatch, setNewBetMatch] = useState("");
+  const [newBetResult, setNewBetResult] = useState("");
+  const [newBetGameResult, setNewBetGameResult] = useState("");
   const [newBetPrediction, setNewBetPrediction] = useState("");
-  const betCollectionRef = collection(db, "bets");
+  const betCollectionRef = collection(db, "past");
 
   const onSubmitPrediction = async () => {
     try {
       await addDoc(betCollectionRef, {
         bet: newBetPrediction,
-        league: newBetLeague,
-        match: newBetGame,
-        time: newBetTime,
+        match: newBetMatch,
+        matchResult: newBetGameResult,
+        result: newBetResult,
       });
-      toast.success("Prediction submitted successfully✅");
+      toast.success("Prediction Editted successfully✅");
     } catch (e) {
       console.log(e);
-      toast.error("Error submitting prediction, try again⛔️");
+      toast.error("Error editting prediction, try again⛔️");
     }
   };
   return (
     <div>
-      <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl my-6 px-4 py-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl text-shark">
-            Add Predictions for the Day!
+            Add Prediction of Completed Games
           </h1>
 
           <p className="mt-4 text-gray-500">
-            Hello Amos, this is where you add the predictions of games that will
-            be played today. It is recommended to do this early in the morning
-            so that the users find the games ready. Clear all the old
-            predictions first.
+            This section allows you to edit the games that youwant to appear on
+            the history bets on the pricing page. On this page you can edit the
+            result of a game that has ended.
           </p>
         </div>
-
-        <RemoveBets />
+        <RemovePastBets />
 
         <div className="mx-auto mb-0 text-shark mt-8 max-w-md space-y-4">
           <p className=" md:text-3xl text-2xl  font-bold text-shark text-center p-4">
-            Add New Predictions
+            Edit Past Predictions
           </p>
           <div>
             <label htmlFor="email" className="sr-only">
-              League
+              Match
             </label>
 
             <div className="relative">
               <input
-                onChange={(e) => setNewBetLeague(e.target.value)}
+                onChange={(e) => setNewBetMatch(e.target.value)}
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Country (ENG or ESP or GER)"
+                placeholder="Game(Chelsea vs Manchester United)"
               />
             </div>
           </div>
           <div>
             <label htmlFor="password" className="sr-only">
-              Time
+              Match Result
             </label>
 
             <div className="relative">
               <input
-                onChange={(e) => setNewBetTime(e.target.value)}
+                onChange={(e) => setNewBetGameResult(e.target.value)}
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Match time (23:00 or 16:00)"
+                placeholder="Match result (4 - 1) "
               />
             </div>
           </div>
           <div>
             <label htmlFor="password" className="sr-only">
-              Game
+              Result
             </label>
 
             <div className="relative">
               <input
-                onChange={(e) => setNewBetGame(e.target.value)}
+                onChange={(e) => setNewBetResult(e.target.value)}
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Game (Chelsea vs Manchester United)"
+                placeholder="Result (won or lost)"
               />
             </div>
           </div>
@@ -116,6 +116,7 @@ export default function AddBet() {
               Add Prediction ✅
             </button>
           </div>
+          R
         </div>
       </div>
       <ToastContainer />

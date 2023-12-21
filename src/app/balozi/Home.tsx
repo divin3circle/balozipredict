@@ -2,6 +2,7 @@ import React from "react";
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
 import AddBet from "./AddBet";
+import AddPastBet from "./AddPastBest";
 
 export default function Home() {
   const logOut = async () => {
@@ -23,6 +24,7 @@ export default function Home() {
         </button>
       </div>
       <AddBet />
+      <AddPastBet />
     </div>
   );
 }
