@@ -5,7 +5,10 @@ import balozi from "../../public/balozi4.jpeg";
 function Modal() {
   return (
     <div>
-      <section className="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3 my-16">
+      <section
+        className="overflow-hidden rounded-lg text-shark
+       shadow-2xl md:grid md:grid-cols-3 my-16"
+      >
         <Image
           alt="1XBET"
           src={balozi}

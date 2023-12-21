@@ -6,7 +6,7 @@ import Statistics from "./homecomponents/Statistics";
 
 export default function Home() {
   return (
-    <section className=" max-w-[1280px] mx-auto">
+    <section className=" max-w-[1280px] mx-auto text-shark">
       <Hero />
       <Balozi />
       <Statistics />

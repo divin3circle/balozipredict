@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ() {
   return (
-    <div className="my-16">
+    <div className="my-16 px-4">
       <div className="flow-root">
         <div className="-my-8 divide-y divide-gray-100">
           <details
