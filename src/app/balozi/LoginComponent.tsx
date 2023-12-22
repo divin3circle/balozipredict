@@ -3,7 +3,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import img from "../../../public/img.jpeg";
 import { auth, googleProvider } from "../config/firebase";
-import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  signInWithRedirect,
+} from "firebase/auth";
 import { FaGoogle } from "react-icons/fa";
 
 export default function LoginComponent({
@@ -25,7 +29,7 @@ export default function LoginComponent({
   };
   const signInWithGoogle = async () => {
     try {
-      await signInWithPopup(auth, googleProvider);
+      await signInWithRedirect(auth, googleProvider);
       setIsAdmin(true);
     } catch (err) {
       console.error(err);
