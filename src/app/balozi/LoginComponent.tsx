@@ -29,7 +29,7 @@ export default function LoginComponent({
   };
   const signInWithGoogle = async () => {
     try {
-      await signInWithRedirect(auth, googleProvider);
+      await signInWithPopup(auth, googleProvider);
       setIsAdmin(true);
     } catch (err) {
       console.error(err);
