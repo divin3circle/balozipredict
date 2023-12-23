@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import balozi from "../../../public/balozi6.jpeg";
+import MainNavBar from "../MainNavBar";
 
 type BlogProps = {
   title: string;
@@ -11,6 +12,9 @@ type BlogProps = {
 export default function Blog({ title, img, desc }: BlogProps) {
   return (
     <div>
+      <h1 className="md:text-3xl text-2xl font-bold text-shark p-4">
+        More Free Odds Coming Soon🔜.
+      </h1>
       <article className="flex bg-white transition hover:shadow-xl">
         <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
           <time

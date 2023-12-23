@@ -15,10 +15,10 @@ export default function Prices() {
 
             <p className="mt-2 sm:mt-4">
               <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                Ksh 350 or 5${" "}
+                Ksh 450 or 5${" "}
               </strong>
 
-              <span className="text-sm font-medium text-gray-700">/month</span>
+              <span className="text-sm font-medium text-gray-700">daily</span>
             </p>
 
             <a
@@ -145,7 +145,7 @@ export default function Prices() {
 
             <p className="mt-2 sm:mt-4">
               <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                Ksh 3,500 or 25${" "}
+                Ksh 4,500 or 25${" "}
               </strong>
 
               <span className="text-sm font-medium text-gray-700">/month</span>
@@ -301,7 +301,7 @@ export default function Prices() {
                 Ksh 850 or 6${" "}
               </strong>
 
-              <span className="text-sm font-medium text-gray-700">/month</span>
+              <span className="text-sm font-medium text-gray-700">/stake</span>
             </p>
 
             <a

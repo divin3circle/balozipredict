@@ -27,7 +27,7 @@ function Modal() {
             </span>
 
             <span className="mt-2 block text-sm">
-              to get firsttime bet bonus of upto 50%
+              to get first-time bet bonus of upto 50%
             </span>
           </h2>
 
@@ -35,11 +35,11 @@ function Modal() {
             className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
             href="https://bit.ly/3XxVHgv"
           >
-            Get Bonus
+            Get Bonus using promocode BALOZI
           </a>
 
           <p className="mt-8 text-xs font-medium uppercase text-gray-400">
-            Offer valid until 28th March, 2023 *
+            Offer valid until: FOREVER!!
           </p>
         </div>
       </section>

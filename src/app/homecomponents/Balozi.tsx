@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import about from "../../../public/about.jpeg";
+import about from "../../../public/Mo.jpeg";
 
 export default function Balozi() {
   return (

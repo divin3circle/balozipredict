@@ -22,11 +22,11 @@ export default function Statistics() {
           <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
               <dt className="order-last text-lg font-medium text-gray-500">
-                September Bets
+                2023 Bets
               </dt>
 
               <dd className="text-4xl font-extrabold text-blue-500 md:text-5xl">
-                178
+                178,000
               </dd>
             </div>
 
@@ -36,7 +36,7 @@ export default function Statistics() {
               </dt>
 
               <dd className="text-4xl font-extrabold text-blue-500 md:text-5xl">
-                169
+                169,000
               </dd>
             </div>
 

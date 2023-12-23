@@ -6,6 +6,7 @@ import balozi3 from "../../../public/balozi3.jpeg";
 import balozi4 from "../../../public/balozi4.jpeg";
 import balozi5 from "../../../public/balozi5.jpeg";
 import balozi6 from "../../../public/balozi6.jpeg";
+import MainNavBar from "../MainNavBar";
 
 export default function page() {
   const blogs = [
@@ -65,14 +66,17 @@ export default function page() {
     },
   ];
   return (
-    <div className=" max-w-4xl mx-auto">
-      {blogs.map((blog) => {
-        return (
-          <div key={blog.id}>
-            <Blog title={blog.title} img={blog.img} desc={blog.desc} />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      {/* <MainNavBar /> */}
+      <div className=" max-w-4xl mx-auto">
+        {blogs.map((blog) => {
+          return (
+            <div key={blog.id}>
+              <Blog title={blog.title} img={blog.img} desc={blog.desc} />
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }

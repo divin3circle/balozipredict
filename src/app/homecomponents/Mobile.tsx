@@ -3,6 +3,7 @@ import Link from "next/link";
 import { IoClose } from "react-icons/io5";
 import balozi from "../../../public/balozi.svg";
 import Image from "next/image";
+import { set } from "firebase/database";
 
 type MobileProps = {
   toggleNav: boolean;
@@ -38,23 +39,27 @@ export default function Mobile({ toggleNav, setToggleNav }: MobileProps) {
           <Link
             href="/"
             className="p-3 rounded-[0.15rem] ease-in duration-200 hover:text-blue-500"
+            onClick={() => setToggleNav(!toggleNav)}
           >
             <li>home</li>
           </Link>
           <Link
             href="/pricing"
+            onClick={() => setToggleNav(!toggleNav)}
             className="p-3 ease-in duration-200 hover:text-blue-500"
           >
             <li>pricing</li>
           </Link>
           <Link
             href="/about"
+            onClick={() => setToggleNav(!toggleNav)}
             className="p-3 ease-in duration-200 hover:text-blue-500"
           >
             <li>about us</li>
           </Link>
           <Link
             href="/blogs"
+            onClick={() => setToggleNav(!toggleNav)}
             className="p-3 ease-in duration-200 hover:text-blue-500"
           >
             <li>blogs</li>

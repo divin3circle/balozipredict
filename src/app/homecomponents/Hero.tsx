@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import homepagePNG from "../../../public/homepage.jpeg";
+import homepagePNG from "../../../public/ronaldo.jpeg";
 
 export default function Hero() {
   return (

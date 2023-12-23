@@ -20,7 +20,6 @@ export default function MainPage() {
   };
   return (
     <>
-      <PricingHeader />
       <div className="max-w-6xl m-auto">
         <Prices />
         <div className="grid md:grid-cols-2 grid-cols-1">
@@ -52,6 +51,7 @@ export default function MainPage() {
         {today ? <Odds /> : <YOdds />}
         <FAQ />
       </div>
+      <PricingHeader />
     </>
   );
 }
