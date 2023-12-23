@@ -35,10 +35,10 @@ export default function Option() {
               the till number . After sending your payment send the confirmation
               message to this number: 0796314164, and you will receive odds for
               your plan in the form of your chosing.
-              <p className="mt-2">
+              <p className=" ">
                 Send confirmation message to this number:{" "}
                 <a
-                  className="bg-green-500 rounded p-2 text-white"
+                  className="bg-green-500 rounded p-1 text-white"
                   href="https://wa.me/0796314164?text=Hi%20I%20have%20payments%20Sending%20comfirmation%20screenshots"
                 >
                   0796314164
