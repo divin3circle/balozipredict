@@ -11,12 +11,12 @@ export default function MainPage() {
   const [yesterday, setYesterday] = useState(false);
 
   const handleToday = () => {
-    setToday(!today);
-    setYesterday(!yesterday);
+    setToday(true);
+    setYesterday(false);
   };
   const handleYesterday = () => {
-    setToday(!today);
-    setYesterday(!yesterday);
+    setToday(false);
+    setYesterday(true);
   };
   return (
     <>
