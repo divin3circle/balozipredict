@@ -1,4 +1,6 @@
 import React from "react";
+import { MdAdminPanelSettings } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
   return (
@@ -17,7 +19,14 @@ export default function Contact() {
                 +254 796 314 164{" "}
               </a>
 
-              <address className="mt-2 not-italic">Balozi Predictions</address>
+              <address className="mt-2 not-italic flex gap-2">
+                <MdAdminPanelSettings size={20} />
+                Balozi Predictions
+              </address>
+              <address className="mt-2 not-italic flex gap-2">
+                <MdEmail size={20} />
+                balozipredict.com
+              </address>
             </div>
           </div>
 
