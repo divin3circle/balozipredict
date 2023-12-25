@@ -21,7 +21,7 @@ export default function Option1() {
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
             <dt className="font-medium text-gray-900">Paypal Email</dt>
             <dd className="text-gray-700 sm:col-span-2">
-              balozipredict@gmail.com
+              baloziprediction@gmail.com
             </dd>
           </div>
 
