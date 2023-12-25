@@ -211,7 +211,7 @@ export default function Testimonials() {
           </blockquote>
         </div>
         <Link href="/pricing" className="flex justify-center items-center my-8">
-          <button className="hover:bg-blue-500 text-gray-500 py-2 px-8 md:text-2xl bg-transparent shadow-lg shadow-blue-500/30 border-blue-500 hover:scale-105 hover:text-white border-[1px] rounded-lg ease-in duration-150">
+          <button className="hover:bg-blue-500 text-xl font-bold text-gray-500 py-6 px-14 md:text-2xl bg-transparent shadow-lg shadow-blue-500/30 border-blue-500 hover:scale-105 hover:text-white border-[1px] rounded-lg ease-in duration-150">
             See pricing
           </button>
         </Link>

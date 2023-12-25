@@ -31,10 +31,10 @@ export default function Option() {
             <dd className="text-gray-700 sm:col-span-2">
               Navigate to your M-PESA app and choose Lipa na M-Pesa option then
               Till Number. Use
-              <span className="text-blue-500 font-semibold"> 8006580</span> for
-              the till number . After sending your payment send the confirmation
-              message to this number: 0796314164, and you will receive odds for
-              your plan in the form of your chosing.
+              <span className="text-blue-500 font-semibold"> 4028562</span> for
+              the till number, Name: Balozi Tech . After sending your payment
+              send the confirmation message to this number: 0796314164, and you
+              will receive odds for your plan in the form of your chosing.
               <p className=" ">
                 Send confirmation message to this number:{" "}
                 <a

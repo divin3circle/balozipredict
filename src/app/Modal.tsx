@@ -35,7 +35,8 @@ function Modal() {
             className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
             href="https://bit.ly/3XxVHgv"
           >
-            Get Bonus using promocode BALOZI
+            Get Bonus using promocode{" "}
+            <span className="text-red-600 font-bold">BALOZI</span>
           </a>
 
           <p className="mt-8 text-xs font-medium uppercase text-gray-400">

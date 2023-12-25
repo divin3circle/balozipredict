@@ -21,7 +21,6 @@ export default function MainPage() {
   return (
     <>
       <div className="max-w-6xl m-auto">
-        <Prices />
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div
             className={`flex items-center justify-center p-4 cursor-pointer`}
@@ -49,6 +48,7 @@ export default function MainPage() {
           </div>
         </div>
         {today ? <Odds /> : <YOdds />}
+        <Prices />
         <FAQ />
       </div>
       <PricingHeader />

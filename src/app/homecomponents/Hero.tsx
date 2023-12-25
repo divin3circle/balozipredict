@@ -23,7 +23,7 @@ export default function Hero() {
           href="/pricing"
           className="flex justify-center items-center my-4 "
         >
-          <button className="hover:bg-blue-500 text-gray-500 py-4 md:px-8 px-2 md:text-2xl bg-transparent shadow-lg shadow-blue-500/30 border-blue-500 hover:scale-105 hover:text-white border-[1px] rounded-lg ease-in duration-150">
+          <button className="hover:bg-blue-500 text-gray-500 font-bold py-4 md:px-8 px-2 md:text-2xl bg-transparent shadow-lg shadow-blue-500/30 border-blue-500 hover:scale-105 hover:text-white border-[1px] rounded-lg ease-in duration-150">
             Get predictions Today!
           </button>
         </Link>
