@@ -25,7 +25,7 @@ export default function Contact() {
               </address>
               <address className="mt-2 not-italic flex gap-2">
                 <MdEmail size={20} />
-                balozipredict.com
+                baloziprediction.com
               </address>
             </div>
           </div>

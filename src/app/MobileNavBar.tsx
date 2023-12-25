@@ -26,7 +26,7 @@ export default function MobileNavBar() {
     <div className="flex bp:hidden justify-between items-center mt-2 px-4 text-blue-500">
       <Link href="/">
         <div className="text-blue-500 font-bold text-3xl cursor-pointer flex gap-1 justify-center items-center">
-          <h1>balozipredict.com</h1>
+          <h1>baloziprediction.com</h1>
           <Image src={balozi} alt="balozisvg" height={40} width={40} />
         </div>
       </Link>

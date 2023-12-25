@@ -13,12 +13,14 @@ export default function Option() {
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
             <dt className="font-medium text-gray-900">Name</dt>
-            <dd className="text-gray-700 sm:col-span-2">Balozi Predictions</dd>
+            <dd className="text-gray-700 sm:col-span-2 font-bold">
+              Balozi Tech
+            </dd>
           </div>
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">M-PESA number</dt>
-            <dd className="text-gray-700 sm:col-span-2">0796314164</dd>
+            <dt className="font-medium text-gray-900">M-PESA Till number</dt>
+            <dd className="text-gray-700 sm:col-span-2">4028562</dd>
           </div>
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">

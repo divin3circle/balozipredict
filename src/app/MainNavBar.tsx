@@ -17,7 +17,7 @@ export default function MainNavBar() {
             className="p-3 text-blue-500 font-bold text-2xl cursor-pointer flex gap-1 justify-center items-center
       "
           >
-            <h1>balozipredict.com</h1>
+            <h1>baloziprediction.com</h1>
             <Image src={balozi} alt="balozisvg" height={40} width={40} />
           </div>
         </Link>

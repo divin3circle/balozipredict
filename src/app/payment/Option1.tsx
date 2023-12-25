@@ -13,7 +13,9 @@ export default function Option1() {
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
             <dt className="font-medium text-gray-900">Name</dt>
-            <dd className="text-gray-700 sm:col-span-2">Balozi Predictions</dd>
+            <dd className="text-gray-700 sm:col-span-2 font-bold">
+              Balozi Tech
+            </dd>
           </div>
 
           <div className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
@@ -38,7 +40,7 @@ export default function Option1() {
               log in with your paypal account and then send the appropriate
               ammount for your plan to this email{" "}
               <span className="text-blue-500 font-semibold">
-                balozipredict@gmail.com
+                baloziprediction@gmail.com
               </span>
               . After sending your payment send the confirmation message to this
               number: 0796314164, and you will receive odds for your plan in the
