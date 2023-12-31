@@ -43,8 +43,8 @@ export default function Option1() {
                 baloziprediction@gmail.com
               </span>
               . After sending your payment send the confirmation message to this
-              number: 0796314164, and you will receive odds for your plan in the
-              form of your chosing.
+              number: +254 796 314 164, and you will receive odds for your plan
+              in the form of your chosing.
               <p className="">
                 Send confirmation message to this number:{" "}
                 <a

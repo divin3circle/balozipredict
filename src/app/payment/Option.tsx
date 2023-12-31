@@ -35,8 +35,9 @@ export default function Option() {
               Till Number. Use
               <span className="text-blue-500 font-semibold"> 4028562</span> for
               the till number, Name: Balozi Tech . After sending your payment
-              send the confirmation message to this number: 0796314164, and you
-              will receive odds for your plan in the form of your chosing.
+              send the confirmation message to this number: +254 796 314 164,
+              and you will receive odds for your plan in the form of your
+              chosing.
               <p className=" ">
                 Send confirmation message to this number:{" "}
                 <a
