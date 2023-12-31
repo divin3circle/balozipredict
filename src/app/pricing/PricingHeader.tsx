@@ -46,7 +46,7 @@ export default function PricingHeader() {
           </div>{" "}
           {/* twtter */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <Link href="https://t.me/BALOZIPREDICTION">
+            <Link href="https://t.me/+S6gDDBxAZvo0NjU0">
               <FaTelegram size={44} />
             </Link>
           </div>{" "}
