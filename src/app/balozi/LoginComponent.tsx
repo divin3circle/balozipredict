@@ -19,7 +19,7 @@ export default function LoginComponent({
   const handleSignIn = () => {
     if (password === "BaloziPredict@2021" && email.length > 0) {
       setIsAdmin(true);
-      console.log("Admin Logged in");
+      // console.log("Admin Logged in");
     }
   };
   return (
