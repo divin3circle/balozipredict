@@ -2,37 +2,24 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import img from "../../../public/img.jpeg";
-import { auth, googleProvider } from "../config/firebase";
-import {
-  createUserWithEmailAndPassword,
-  signInWithPopup,
-  signInWithRedirect,
-} from "firebase/auth";
 import { FaGoogle } from "react-icons/fa";
 
-export default function LoginComponent({
-  isAdmin,
-  setIsAdmin,
-}: {
-  isAdmin: boolean;
+type LoginComponentProps = {
   setIsAdmin: React.Dispatch<React.SetStateAction<boolean>>;
-}) {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  isAdmin: boolean;
+};
 
-  const signIn = async () => {
-    try {
-      await createUserWithEmailAndPassword(auth, email, pass);
-    } catch (e) {
-      console.log(e);
-    }
-  };
-  const signInWithGoogle = async () => {
-    try {
-      await signInWithPopup(auth, googleProvider);
+export default function LoginComponent({
+  setIsAdmin,
+  isAdmin,
+}: LoginComponentProps) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSignIn = () => {
+    if (password === "BaloziPredict@2021" && email.length > 0) {
       setIsAdmin(true);
-    } catch (err) {
-      console.error(err);
+      console.log("Admin Logged in");
     }
   };
   return (
@@ -85,6 +72,7 @@ export default function LoginComponent({
                   <input
                     type="email"
                     id="Email"
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     name="email"
                     className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
@@ -104,14 +92,15 @@ export default function LoginComponent({
                     type="password"
                     id="Password"
                     name="password"
-                    onChange={(e) => setPass(e.target.value)}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
                   />
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                   <button
-                    onClick={signIn}
+                    onClick={handleSignIn}
                     className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                   >
                     Log in
@@ -120,7 +109,7 @@ export default function LoginComponent({
               </div>
               <div className="flex mt-8 items-center justify-center px-4">
                 <button
-                  onClick={signInWithGoogle}
+                  onClick={handleSignIn}
                   className="w-3/4 py-4 flex justify-center items-center bg-blue-500 text-white rounded-lg"
                 >
                   <FaGoogle size={34} />
