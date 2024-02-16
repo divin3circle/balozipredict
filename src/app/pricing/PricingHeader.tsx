@@ -40,13 +40,13 @@ export default function PricingHeader() {
         <div className="flex justify-between gap-2">
           {/* socials */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <Link href="https://x.com/balozipredict?t=J1rcCZNWsx2p2PiQvX0ZTQ&s=09">
+            <Link href="https://x.com/KingBalozi_254?t=FR4GPoENiOgIZ95OxUsuKQ&s=09">
               <FaSquareXTwitter size={44} />
             </Link>
           </div>{" "}
           {/* twtter */}
           <div className="hover:text-blue-500 cursor-pointer ease-in duration-200 p-2">
-            <Link href="https://t.me/+S6gDDBxAZvo0NjU0">
+            <Link href="https://t.me/freewelloddshere">
               <FaTelegram size={44} />
             </Link>
           </div>{" "}
